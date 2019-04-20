@@ -285,6 +285,95 @@ title: Dogs of New York City
   }
 };
       vegaEmbed('#vis', yourVlSpec);
+	    
+	     var yourV2Spec = 
+
+{
+
+  "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+  "title":{"text": "New York City Population by Borough 1950 - 2040"},
+  "description": "New York City Population by Borough 1950 - 2040",
+  "data": { "values" : [
+    {"Year":"1950","Percentage":"18.39", "Borough":"Bronx" },
+    {"Year":"1960","Percentage":"18.31","Borough":"Bronx" },
+    {"Year":"1970","Percentage":"18.64","Borough":"Bronx" },
+    {"Year":"1980","Percentage":"16.53","Borough":"Bronx" },
+    {"Year":"1990","Percentage":"16.44", "Borough":"Bronx" },
+    {"Year":"2000","Percentage":"16.64","Borough":"Bronx" },
+    {"Year":"2010","Percentage":"16.8","Borough":"Bronx" },
+    {"Year":"2020","Percentage":"16.92","Borough":"Bronx" },
+    {"Year":"2030","Percentage":"17.22","Borough":"Bronx" },
+    {"Year":"2040","Percentage":"17.5","Borough":"Bronx" },
+
+   {"Year":"1950","Percentage":"34.7", "Borough":"Brooklyn" },
+    {"Year":"1960","Percentage":"33.76","Borough":"Brooklyn" },
+    {"Year":"1970","Percentage":"32.96","Borough":"Brooklyn" },
+    {"Year":"1980","Percentage":"31.55","Borough":"Brooklyn" },
+    {"Year":"1990","Percentage":"31.42", "Borough":"Brooklyn" },
+    {"Year":"2000","Percentage":"30.78","Borough":"Brooklyn" },
+    {"Year":"2010","Percentage":"30.97","Borough":"Brooklyn" },
+    {"Year":"2020","Percentage":"30.97","Borough":"Brookyln" },
+    {"Year":"2030","Percentage":"31.22","Borough":"Brooklyn" },
+    {"Year":"2040","Percentage":"31.47","Borough":"Brooklyn" },
+
+     {"Year":"1950","Percentage":"24.84", "Borough":"Manhattan" },
+    {"Year":"1960","Percentage":"21.82","Borough":"Manhattan" },
+    {"Year":"1970","Percentage":"19.5","Borough":"Manhattan" },
+    {"Year":"1980","Percentage":"20.2","Borough":"Manhattan" },
+    {"Year":"1990","Percentage":"20.31", "Borough":"Manhattan" },
+    {"Year":"2000","Percentage":"19.2","Borough":"Manhattan" },
+    {"Year":"2010","Percentage":"19.24","Borough":"Manhattan" },
+    {"Year":"2020","Percentage":"19.16","Borough":"Manhattan" },
+    {"Year":"2030","Percentage":"19.01","Borough":"Manhattan" },
+    {"Year":"2040","Percentage":"18.74","Borough":"Manhattan" },
+
+     {"Year":"1950","Percentage":"19.65", "Borough":"Queens" },
+    {"Year":"1960","Percentage":"23.25","Borough":"Queens" },
+    {"Year":"1970","Percentage":"25.16","Borough":"Queens" },
+    {"Year":"1980","Percentage":"26.75","Borough":"Queens" },
+    {"Year":"1990","Percentage":"26.65", "Borough":"Queens" },
+    {"Year":"2000","Percentage":"27.84","Borough":"Queens" },
+    {"Year":"2010","Percentage":"27.3","Borough":"Queens" },
+    {"Year":"2020","Percentage":"27.25","Borough":"Queens" },
+    {"Year":"2030","Percentage":"26.91","Borough":"Queens" },
+    {"Year":"2040","Percentage":"26.73","Borough":"Queens" },
+
+    {"Year":"1950","Percentage":"2.43", "Borough":"Staten Island" },
+    {"Year":"1960","Percentage":"2.85","Borough":"Staten Island" },
+    {"Year":"1970","Percentage":"3.74","Borough":"Staten Island" },
+    {"Year":"1980","Percentage":"4.98","Borough":"Staten Island" },
+    {"Year":"1990","Percentage":"5.18", "Borough":"Staten Island" },
+    {"Year":"2000","Percentage":"5.54","Borough":"Staten Island" },
+    {"Year":"2010","Percentage":"5.69","Borough":"Staten Island" },
+    {"Year":"2020","Percentage":"5.7","Borough":"Staten Island" },
+    {"Year":"2030","Percentage":"5.64","Borough":"Staten Island" },
+    {"Year":"2040","Percentage":"5.55","Borough":"Staten Island" }
+    ]
+    
+    },
+  "mark": {
+    "type": "line",
+    "point": true
+  },
+  "encoding": {
+    "x": {"field": "Year", "type": "temporal"},
+    "y": {"field": "Percentage", "type": "quantitative","title":"Share of Population(%)"},
+    
+      "color": {
+      "field": "Borough", "type": "nominal",
+      "scale": {
+        "domain": ["Bronx", "Brooklyn", "Manhattan", "Queens","Staten Island"],
+        "range": ["red", "green", "blue", "orange","purple"]
+      }
+    }
+  }
+}
+
+  
+;
+      vegaEmbed('#vis', yourVlSpec);
+	    vegaEmbed('#vis', yourV2Spec);
+      	    
     </script>
 	</div>
 	<div class="right"></div>
