@@ -1,0 +1,160 @@
+---
+layout: default
+title: CV
+---
+	<h1>{{NYC Dogs}}</h1>
+	<div id="header"></div>
+	<div class="left"></div>
+	<div class="stuff">
+  		<hr />
+		<h2>NYC Dogs by Borough</h2>
+		<head>
+    <title>Embedding Vega-Lite</title>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.3.5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@3.2.1"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@4.0.0"></script>
+  </head>
+  <body>
+    <div id="vis"></div>
+
+    <script type="text/javascript">
+      var yourVlSpec = {
+  "$schema": "https://vega.github.io/schema/vega-lite/v2.1.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "url": "https://raw.githubusercontent.com/erikaweir/DataVisualizationFinalProject/master/Borough%20Boundaries.geojson",
+    "format": {
+      "property": "features"
+    }
+  },
+  "projection": {
+    "type": "albersUsa"
+  },
+  "transform": [
+    {
+      "lookup": "properties.boro_name",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/erikaweir/DataVisualizationFinalProject/master/Breeds_by_Borough.csv"
+        },
+        "key": "Borough",
+        "fields": [
+          "Count",
+          "Borough",
+          "Pop_Dog1",
+          "Pop_Dog2",
+          "Pop_Dog3"
+        ]
+      }
+    }
+  ],
+  "mark": "geoshape",
+  "encoding": {
+    "color": {
+      "field": "Count",
+      "type": "quantitative"
+    },
+    "tooltip": [
+      {
+        "field": "Borough",
+        "type": "nominal"
+      },
+      {
+        "field": "Pop_Dog1",
+        "type": "nominal"
+      },
+      {
+        "field": "Pop_Dog2",
+        "type": "nominal"
+      },
+      {
+        "field": "Pop_Dog3",
+        "type": "nominal"
+      }
+    ]
+  }
+}
+;
+      vegaEmbed('#vis', yourVlSpec);
+    </script>
+  </body>
+		<p class="head">University of Illinois | <i>B.S. with Distinction in Earth, Society, and Environmental Sustainability</i> </p>
+		<ul>
+			<li>2012 - 2015</li>
+		</ul>
+		<p class="head">University of Illinois | <i>B.A. with Highest Distinction in Sociology</i> </p>
+		<ul>
+			<li>2012 - 2015</li>
+		</ul>
+		<h2>Awards & Honors</h2>
+		<ul>
+			<li>2015 Fred S. Bailey Undergraduate Scholar</li>
+			<li>Alpha Kappa Delta National Honor Society in Sociology</li>
+			<li>2018 DLF Forum Fellow</li>
+		</ul>
+		<h2>Academic Experience</h2>
+  		<p class="head">Slavic Reference Service | <i>Outreach and Engagement Graduate Assistant</i> </p>
+  		<ul>
+   			<li>Lead outreach and engagement efforts on behalf of the SRS including webinars</li>
+			<li>Manage <a href="https://www.facebook.com/slavicreferenceservice2/"> social media</a> accounts and create original content</li>
+    			<li>Update webpage and manage online registration of events</li>
+    			<li>Provide reference services for faculty, scholars, and students seeking information in our subject area</li>
+    			<li>Provide library instruction for undergraduates, graduate students, faculty, and visiting scholars</li>
+  		</ul>
+		<p class="head">International and Area Studies Library | <i>Graduate Hourly</i> </p>
+ 		<ul>
+			<li>Update and maintain <a href="http://quest.grainger.uiuc.edu/RussianManuscripts/"> The Russian Empire and Soviet Union: A Guide to Manuscripts and Archival Materials in the United States</a></li
+			<li>Verify and correct archival holding information</li>
+			<li>Collaborate directly with donors and archives</li>
+  		</ul>
+  		<p class="head"> University of Illinois Sociology Department | <i>Undergraduate Research Assistant</i></p>
+  		<ul>
+      			<li>Transcribed, coded, and analyzed interview data from the Englewood Black Mother’s Research Project</li>
+      			<li>Processed data with Atlas.ti and IBM SPSS software</li>
+    			<li>Collaborated with a team to create relevant public policy solutions to community problems raised in interviews and surveys from the sample</li>
+  		</ul>
+		<p class="head"> University of Illinois College of Business | <i>Undergraduate Research Assistant</i></p>
+  		<ul>
+      			<li>Transcribed and analyzed data for a marketing research project on the topic of belonging</li>
+  		</ul>
+		<h2>Professional Experience</h2>
+		<p class="head">Museum of the Grand Prairie | <i>Doris K. Wylie Hoskins Archive for Cultural Diversity Intern</i></p>
+		<ul>
+      			<li>Catalog and digitize archival items related to the history of the African American community in Champaign County, Illinois</li>
+      			<li>Assist in the creation of an updated finding aid</li>
+  		</ul>
+  		<p class="head">Personal PAC | <i>Event Assistant</i></p>
+		<ul>
+      			<li>Organized and maintained the organization’s donor database</li>
+      			<li>Assisted with the planning and execution of the organization’s yearly luncheon</li>
+  		</ul>
+		<p class="head">Guaranteed Rate | <i>Wellness Coordinator</i></p>
+		<ul>
+      			<li>Developed and executed health and wellness initiatives for Guaranteed Rate employees</li>
+      			<li>Composed materials for the employee recognition program and various other internal communications projects</li>
+			<li>Created an employee resource guide for the company’s intranet</li>
+			<li>Coordinated volunteer and community outreach initiatives on behalf of the company</li>
+  		</ul>
+		<p class="head">University of Illinois | <i>Sonified Sustainability Festival Intern</i></p>
+		<ul>
+      			<li>Promoted and planned a sustainability-themed arts programs in the 2015-16 academic year</li>
+      			<li>Created a social media presence and campaign</li>
+			<li>Gained the support of 18 community organizations as event partners</li>
+  		</ul>
+		<h2>Skills</h2>
+		<ul>
+			<li>Experience with Python & SQL</li>
+			<li>Proficiency with IBM SPSS, ArcGIS</li>
+		</ul>
+		<h2>Relevant Coursework</h2>
+		<ul>
+			<li>IS 452 – Foundations of Information Processing</li>
+			<li>IS 507 – Introduction to Bibliographic Metadata</li>
+			<li>IS 586 – Digital Preservation</li>
+		</ul>
+	</div>
+	<div class="right"></div>
+	<div id="footer">
+	
+</ul>
