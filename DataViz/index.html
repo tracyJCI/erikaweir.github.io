@@ -1,6 +1,6 @@
 ---
 layout: default
-title: CV
+title: Dogs of New York City
 ---
 	<h1>{{NYC Dogs}}</h1>
 	<div id="header"></div>
@@ -79,80 +79,213 @@ title: CV
       vegaEmbed('#vis', yourVlSpec);
     </script>
   </body>
-		<p class="head">University of Illinois | <i>B.S. with Distinction in Earth, Society, and Environmental Sustainability</i> </p>
-		<ul>
-			<li>2012 - 2015</li>
-		</ul>
-		<p class="head">University of Illinois | <i>B.A. with Highest Distinction in Sociology</i> </p>
-		<ul>
-			<li>2012 - 2015</li>
-		</ul>
-		<h2>Awards & Honors</h2>
-		<ul>
-			<li>2015 Fred S. Bailey Undergraduate Scholar</li>
-			<li>Alpha Kappa Delta National Honor Society in Sociology</li>
-			<li>2018 DLF Forum Fellow</li>
-		</ul>
-		<h2>Academic Experience</h2>
-  		<p class="head">Slavic Reference Service | <i>Outreach and Engagement Graduate Assistant</i> </p>
-  		<ul>
-   			<li>Lead outreach and engagement efforts on behalf of the SRS including webinars</li>
-			<li>Manage <a href="https://www.facebook.com/slavicreferenceservice2/"> social media</a> accounts and create original content</li>
-    			<li>Update webpage and manage online registration of events</li>
-    			<li>Provide reference services for faculty, scholars, and students seeking information in our subject area</li>
-    			<li>Provide library instruction for undergraduates, graduate students, faculty, and visiting scholars</li>
-  		</ul>
-		<p class="head">International and Area Studies Library | <i>Graduate Hourly</i> </p>
- 		<ul>
-			<li>Update and maintain <a href="http://quest.grainger.uiuc.edu/RussianManuscripts/"> The Russian Empire and Soviet Union: A Guide to Manuscripts and Archival Materials in the United States</a></li
-			<li>Verify and correct archival holding information</li>
-			<li>Collaborate directly with donors and archives</li>
-  		</ul>
-  		<p class="head"> University of Illinois Sociology Department | <i>Undergraduate Research Assistant</i></p>
-  		<ul>
-      			<li>Transcribed, coded, and analyzed interview data from the Englewood Black Mother’s Research Project</li>
-      			<li>Processed data with Atlas.ti and IBM SPSS software</li>
-    			<li>Collaborated with a team to create relevant public policy solutions to community problems raised in interviews and surveys from the sample</li>
-  		</ul>
-		<p class="head"> University of Illinois College of Business | <i>Undergraduate Research Assistant</i></p>
-  		<ul>
-      			<li>Transcribed and analyzed data for a marketing research project on the topic of belonging</li>
-  		</ul>
-		<h2>Professional Experience</h2>
-		<p class="head">Museum of the Grand Prairie | <i>Doris K. Wylie Hoskins Archive for Cultural Diversity Intern</i></p>
-		<ul>
-      			<li>Catalog and digitize archival items related to the history of the African American community in Champaign County, Illinois</li>
-      			<li>Assist in the creation of an updated finding aid</li>
-  		</ul>
-  		<p class="head">Personal PAC | <i>Event Assistant</i></p>
-		<ul>
-      			<li>Organized and maintained the organization’s donor database</li>
-      			<li>Assisted with the planning and execution of the organization’s yearly luncheon</li>
-  		</ul>
-		<p class="head">Guaranteed Rate | <i>Wellness Coordinator</i></p>
-		<ul>
-      			<li>Developed and executed health and wellness initiatives for Guaranteed Rate employees</li>
-      			<li>Composed materials for the employee recognition program and various other internal communications projects</li>
-			<li>Created an employee resource guide for the company’s intranet</li>
-			<li>Coordinated volunteer and community outreach initiatives on behalf of the company</li>
-  		</ul>
-		<p class="head">University of Illinois | <i>Sonified Sustainability Festival Intern</i></p>
-		<ul>
-      			<li>Promoted and planned a sustainability-themed arts programs in the 2015-16 academic year</li>
-      			<li>Created a social media presence and campaign</li>
-			<li>Gained the support of 18 community organizations as event partners</li>
-  		</ul>
-		<h2>Skills</h2>
-		<ul>
-			<li>Experience with Python & SQL</li>
-			<li>Proficiency with IBM SPSS, ArcGIS</li>
-		</ul>
-		<h2>Relevant Coursework</h2>
-		<ul>
-			<li>IS 452 – Foundations of Information Processing</li>
-			<li>IS 507 – Introduction to Bibliographic Metadata</li>
-			<li>IS 586 – Digital Preservation</li>
-		</ul>
+		<h2>Human Population</h2>
+		<div id="vis"></div>
+
+    <script type="text/javascript">
+      var yourVlSpec = {{
+  "title": "NYC Population by Borough",
+  "width": 150,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "Borough": "Bronx",
+        "Population": 1451277,
+        "year": 1950
+      },
+      {
+        "Borough": "Brooklyn",
+        "Population": 2738175,
+        "year": 1950
+      },
+      {
+        "Borough": "Manhattan",
+        "Population": 1960101,
+        "year": 1950
+      },
+      {
+        "Borough": "Queens",
+        "Population": 1550849,
+        "year": 1950
+      },
+      {
+        "Borough": "Staten Island",
+        "Population": 191555,
+        "year": 1950
+      },
+      {
+        "Borough": "Bronx",
+        "Population": 1424815,
+        "year": 1960
+      },
+      {
+        "Borough": "Brooklyn",
+        "Population": 2627319,
+        "year": 1960
+      },
+      {
+        "Borough": "Manhattan",
+        "Population": 1698281,
+        "year": 1960
+      },
+      {
+        "Borough": "Queens",
+        "Population": 1809578,
+        "year": 1960
+      },
+      {
+        "Borough": "Staten Island",
+        "Population": 221991,
+        "year": 1960
+      },
+      {
+        "Borough": "Bronx",
+        "Population": 1471701,
+        "year": 1970
+      },
+      {
+        "Borough": "Brooklyn",
+        "Population": 2602012,
+        "year": 1970
+      },
+      {
+        "Borough": "Manhattan",
+        "Population": 1539233,
+        "year": 1970
+      },
+      {
+        "Borough": "Queens",
+        "Population": 1986473,
+        "year": 1970
+      },
+      {
+        "Borough": "Staten Island",
+        "Population": 295443,
+        "year": 1970
+      },
+      {
+        "Borough": "Bronx",
+        "Population": 1168972,
+        "year": 1980
+      },
+      {
+        "Borough": "Brooklyn",
+        "Population": 2230936,
+        "year": 1980
+      },
+      {
+        "Borough": "Manhattan",
+        "Population": 1428285,
+        "year": 1980
+      },
+      {
+        "Borough": "Queens",
+        "Population": 1891325,
+        "year": 1980
+      },
+      {
+        "Borough": "Staten Island",
+        "Population": 352121,
+        "year": 1980
+      },
+      {
+        "Borough": "Bronx",
+        "Population": 1203789,
+        "year": 1990
+      },
+      {
+        "Borough": "Brooklyn",
+        "Population": 2300664,
+        "year": 1990
+      },
+      {
+        "Borough": "Manhattan",
+        "Population": 1487536,
+        "year": 1990
+      },
+      {
+        "Borough": "Queens",
+        "Population": 1951598,
+        "year": 1990
+      },
+      {
+        "Borough": "Staten Island",
+        "Population": 378977,
+        "year": 1990
+      },
+      {
+        "Borough": "Bronx",
+        "Population": 1332650,
+        "year": 2000
+      },
+      {
+        "Borough": "Brooklyn",
+        "Population": 2465326,
+        "year": 2000
+      },
+      {
+        "Borough": "Manhattan",
+        "Population": 1537195,
+        "year": 2000
+      },
+      {
+        "Borough": "Queens",
+        "Population": 2229379,
+        "year": 2000
+      },
+      {
+        "Borough": "Staten Island",
+        "Population": 443728,
+        "year": 2000
+      },
+      {
+        "Borough": "Bronx",
+        "Population": 1385108,
+        "year": 2010
+      },
+      {
+        "Borough": "Brooklyn",
+        "Population": 2552911,
+        "year": 2010
+      },
+      {
+        "Borough": "Manhattan",
+        "Population": 1585873,
+        "year": 2010
+      },
+      {
+        "Borough": "Queens",
+        "Population": 2250002,
+        "year": 2010
+      },
+      {
+        "Borough": "Staten Island",
+        "Population": 468730,
+        "year": 2010
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "column": {
+      "field": "year"
+    },
+    "x": {
+      "field": "Borough",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "Population",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "Borough"
+    }
+  }
+};
+      vegaEmbed('#vis', yourVlSpec);
+    </script>
 	</div>
 	<div class="right"></div>
 	<div id="footer">
